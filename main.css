@@ -1,0 +1,146 @@
+html,body,table,tr,th,td {
+margin:0 auto;
+padding:0 auto;
+font-size: 100%;
+}
+
+body {
+height:auto;
+line-height:1;
+font-family: Arial,sans-serif;
+background-image:url('dream.jpg');
+background:rgb(129,129,129);
+background-repeat:no-repeat;
+background-color:#A9A9A9;
+color:#FO8080;
+}
+
+table {
+width:99%;
+background-color:#FFFFFF;
+border:collapse;
+font-size:1em;
+border:1px solid white;
+border-radius:5px;
+color:#174679;
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
+opacity:0.85;
+}
+th{
+height:50px;
+text-align:left;
+-webkit-box-shadow: 0 8px 6px -6px #CFCFCF;
+-moz-box-shadow: 0 8px 6px -6px #CFCFCF;
+box-shadow: 0 8px 6px -6px #CFCFCF;
+color:#1D146D;
+}
+
+td{
+padding:1em;
+width:50%;
+}
+a
+{
+color: #FA8072;
+text-decoration:none;
+font-weight:bold;
+}
+a:link {
+color:#008B8B;
+}
+a:visited {
+color: violet;
+}
+
+
+.topbar
+{
+width:100%;
+color:#4B0082;
+height:60px;
+border-bottom:2px ;
+background:#B6B53A;
+font-weight:bold;
+}
+.topbar a{
+color:#A9A9A9;
+font-size:15px;
+}
+.topbar a:link{
+color:#4B0082;
+font-size:15px;
+}
+.topbar a:visited {
+color:#4B0082;
+font-size:15px;
+}
+.topbar #textleft{
+font-size:2em;
+font-weight:bold;
+margin:15px;
+}
+
+#textleft {
+	float:left;
+	margin:25px;
+}
+
+#textright {
+float:right;
+margin: 25px;
+}
+	
+#container {
+width:100%;
+min-height:450px;
+margin-top:60px;
+display:inline-block;
+}
+#mainbar {
+float: left;
+margin-bottom: 40px;
+width: 735px;
+border-left:1px solid black;
+}
+#sidebar {
+overflow:hidden;
+float:right;
+width:220px;
+background:#e5e5e5;
+margin-right:9px;
+}
+
+#hotelcell table{
+border:0;
+}
+
+#hotelcell td{
+width:auto;
+border-bottom:1px dotted black;
+}
+
+#bookingcell{
+text-align:left;
+margin-left:5px;
+}
+
+#bookingcell table{
+width:100%;
+}
+#bookingcell td{
+width:auto;
+border-bottom:1px dotted black;
+text-align:center;
+}
+
+
+input[type=submit]{
+padding:0.3em 0.7em;
+font-size:1em;
+font-weight:bold;
+border:none;
+background:#4682B4;
+color:#4B0082;
+}

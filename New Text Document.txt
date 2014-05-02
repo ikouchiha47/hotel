@@ -1,0 +1,15 @@
+<!--<tr>
+				<td>Number of Rooms</td>
+				<td><input type="text" name="rooms" id="rooms"/></td>
+			</tr>
+			<tr>
+				<td>Beds per Room</td>
+					
+					if(isset($_POST['rooms'])) {
+						$nrooms=filter_input(INPUT_POST,'rooms',FILTER_VALIDATE_INT);
+						for($i=1;$i<=$nrooms;$i++){
+							print('<td>Room'.$i.'<input type="text" id="room['.$i.']" name="room['.$i.']"/></td>');
+						}
+					}
+					
+			</tr>-->
