@@ -20,9 +20,8 @@
 	?>
 
 </div>
-<div id="container"  style="background-image:url('resort1.jpg');">
+<div id="container">
 	 <div id="mainbar">
-		<center><script src="http://h1.flashvortex.com/display.php?id=2_1375470086_62943_364_0_450_67_9_1_68" type="text/javascript"></center></script>
 		<form method="post" action="showhotels.php">
 		<table style="opacity:0.8;">
 			<tr>
