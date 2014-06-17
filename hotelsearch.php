@@ -40,13 +40,13 @@ print_r($html);
 if($tags==''){
 	$html="";
 	$sth=$dbh->prepare("select hotelID,name,country,city,rating,pricebed from hotels where rating=? or pricebed<=? order by rating desc");
-	$sth->bindParam(1,$pbed,PDO::PARAM_INT);
+	$sth->bindParam(1,$rates,PDO::PARAM_INT);
 	$sth->bindParam(2,$pbed,PDO::PARAM_INT);
 	$sth->execute();
 	while($res=$sth->fetch(PDO::FETCH_OBJ)){
 		print_r('<td><h3><a href="./viewhotel.php?id='.$res->hotelID.'">'.ucfirst(printr($res->name)).'</a></h3></td>');
 		print_r('<td>'.ucfirst(printr($res->country)).','.ucfirst(printr($res->city)).'</td>');
-		print_r('<td>'.printrint($res->pricebed).'</td>');
+		print_r('<td>'.print_r($res->pricebed).'</td>');
 		print_r('<td>'.$res->rating.'&nbsp;&#10030;</td></tr>');
 	
 	}
@@ -59,21 +59,21 @@ if($tags!=''){
 	foreach($tags as $tag)
 		$amm[++$i]=$tag;
 	$sth=$dbh->prepare("select hotelID,name,country,city,rating,pricebed,tags from hotels where rating=? or pricebed<=? order by pricebed desc");
-	$sth->bindParam(1,$pbed,PDO::PARAM_INT);
+	$sth->bindParam(1,$rates,PDO::PARAM_INT);
 	$sth->bindParam(2,$pbed,PDO::PARAM_INT);
 	$sth->execute();
 	while($res=$sth->fetch(PDO::FETCH_OBJ)){
-		$tem=$res->tags;
+		$temp=$res->tags;
 		$j=0;$ch=0;
-		$temps=preg_split('/[\,]/',$tem);
-		foreach($temps as $ob){
+		$alltags=preg_split('/[\,]/',$temp);
+		foreach($alltags as $ob){
 			for($j=0;$j<$i;$j++)
 				$ch++;
 			}
 		if($ch>0){
 			print_r('<td><h3><a href="./viewhotel.php?id='.$res->hotelID.'">'.ucfirst(printr($res->name)).'</a></h3></td>');
 			print_r('<td>'.ucfirst(printr($res->country)).','.ucfirst(printr($res->city)).'</td>');
-			print_r('<td>'.printrint($res->pricebed).'</td>');
+			print_r('<td>'.print_r($res->pricebed).'</td>');
 			print_r('<td>'.$res->rating.'&nbsp;&#10030;</td></tr>');
 			}
 		}
