@@ -44,8 +44,8 @@ if($tags==''){
 	$sth->bindParam(2,$pbed,PDO::PARAM_INT);
 	$sth->execute();
 	while($res=$sth->fetch(PDO::FETCH_OBJ)){
-		print_r('<td><h3><a href="./viewhotel.php?id='.$res->hotelID.'">'.ucfirst(printr($res->name)).'</a></h3></td>');
-		print_r('<td>'.ucfirst(printr($res->country)).','.ucfirst(printr($res->city)).'</td>');
+		print_r('<td><h3><a href="./viewhotel.php?id='.$res->hotelID.'">'.ucfirst(print_r($res->name)).'</a></h3></td>');
+		print_r('<td>'.ucfirst(print_r($res->country)).','.ucfirst(print_r($res->city)).'</td>');
 		print_r('<td>'.print_r($res->pricebed).'</td>');
 		print_r('<td>'.$res->rating.'&nbsp;&#10030;</td></tr>');
 	
@@ -67,9 +67,12 @@ if($tags!=''){
 		$j=0;$ch=0;
 		$alltags=preg_split('/[\,]/',$temp);
 		foreach($alltags as $ob){
-			for($j=0;$j<$i;$j++)
-				$ch++;
+			for($j=0;$j<$i;$j++){
+				if($ob == $amm[$j])
+				    $ch++;
 			}
+		}
+		
 		if($ch>0){
 			print_r('<td><h3><a href="./viewhotel.php?id='.$res->hotelID.'">'.ucfirst(printr($res->name)).'</a></h3></td>');
 			print_r('<td>'.ucfirst(printr($res->country)).','.ucfirst(printr($res->city)).'</td>');
