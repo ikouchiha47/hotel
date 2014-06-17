@@ -68,32 +68,13 @@
 				<td><input type="submit" id="showhotels" name="showhotels" value="Show Hotels"/></td>
 			</tr>
 		</table>
-		</form><br><br><br><br><br>
-		<table><tr><td><img src="http://gos3.ibcdn.com/gpmsqo5a354pffa4dn7qk6940042.jpg" width="200" height="200"></td> <td><img src="http://gos3.ibcdn.com/cdvu888l5t33dc15lsl8unt9002n.gif" width="200" height="200"></td> <td><img src="http://gos3.ibcdn.com/enjh67ot5p4s93i5too3lt5h001b.gif" width="200" height="200"></td> <td><img src="http://gos3.ibcdn.com/p34robmsu10a98510sdebl860055.gif" width="200" height="200"></td></tr>
-	<tr><td><b>Hotels in Bangalore</b></td> <td><b>Hotels in Delhi</b></td> <td><b>Hotels in Kolkata</b></td> <td><b>Hotels in Mumbai</b></td></tr>
-	<tr><td>Maple Whitefield-1200</td> <td>Hotel Southern-2200</td> <td>The Pride Hotel-3500</td> <td>The Orchid-9500</td></tr>
-	<tr><td>Peridot Inn-1100</td> <td>Hotel Garden View-2300</td> <td>Hotel Diplomat-2900</td> <td>Milan International-5600</td></tr>
-	<tr><td><a href ="http://www.goibibo.com/hotels/hotels-in-bangalore/">All Bangalore hotels</a></td> <td><a href ="http://www.goibibo.com/hotels/hotels-in-new-delhi/">All Delhi hotels</a></td> <td><a href="http://www.goibibo.com/hotels/hotels-in-kolkata/">All Kolkata hotels</td> <td><a href="http://www.goibibo.com/hotels/hotels-in-mumbai/">All Mumbai hotels</td></tr>
-	</table><br>	
-	<a href="https://www.facebook.com/">Follow us>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</form><br/>
+			
+	
 		<a href="http://localhost/hotel/reservationpolicy.html">Reservation Policy>>>></a>
 		</div>
-		
-	<div id="sidebar"><i><center>Advertisement</i></center>
-	<script src="http://h1.flashvortex.com/display.php?id=2_1375469727_1798_507_0_215_74_9_1_68" type="text/javascript"></script><br><br><br>
-	<marquee scrollamount="15" direction="up" behavior="alternate"><center><img src="http://www.animated-pictures.net/pictures/Vehicles/planefly.gif"></center></marquee></marquee>
-	<a href="http://hotel.makemytrip.com/makemytrip/site/hotels/detail?city=BOM&country=IN&checkin=date_5&checkout=date_7&roomStayQualifier=1e0e&hotelId=200709141341578986&intid=336x280-HotelBAWAhtl_herohotel_16072013" target="_top" >
-<img src="http://pagead2.googlesyndication.com/simgad/12246474011235377883" width="225" height="150" alt="null" border="0"></a><br><br><br>
 
-
-
-
-	
-	</div></div>
-
-
-
+   </div>
 </div>
 	
 <?php include('footer.php');?>
